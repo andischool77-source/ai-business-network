@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI BUSINESS NETWORK</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="app">
+
+    <aside class="sidebar">
+        <div class="brand">
+            <div class="brand-icon">AI</div>
+            <div>
+                <h2>BUSINESS</h2>
+                <span>NETWORK</span>
+            </div>
+        </div>
+
+        <nav>
+            <button class="nav-btn active" data-page="dashboard">🏠 Dashboard</button>
+            <button class="nav-btn" data-page="business">🏢 Bisnis</button>
+            <button class="nav-btn" data-page="products">📦 Produk</button>
+            <button class="nav-btn" data-page="network">🌐 Network</button>
+            <button class="nav-btn" data-page="matching">🤖 AI Matching</button>
+            <button class="nav-btn" data-page="requests">📋 Kebutuhan</button>
+            <button class="nav-btn" data-page="offers">💬 Penawaran</button>
+            <button class="nav-btn" data-page="transactions">💰 Transaksi</button>
+            <button class="nav-btn" data-page="services">🛠️ Jasa</button>
+        </nav>
+
+        <div class="sidebar-bottom">
+            <div class="network-status">
+                <span class="status-dot"></span>
+                Network Aktif
+            </div>
+        </div>
+    </aside>
+
+    <main class="main">
+
+        <header class="topbar">
+            <div>
+                <h1 id="pageTitle">Dashboard</h1>
+                <p id="pageSubtitle">Pusat jaringan bisnis Anda</p>
+            </div>
+
+            <div class="top-actions">
+                <button class="icon-btn" id="notificationBtn">🔔</button>
+                <div class="profile">
+                    <div class="avatar">B</div>
+                    <span id="profileName">Bisnis Saya</span>
+                </div>
+            </div>
+        </header>
+
+        <section id="content"></section>
+
+    </main>
+</div>
+
+<div id="modal" class="modal hidden">
+    <div class="modal-box">
+        <button class="modal-close" id="modalClose">×</button>
+        <div id="modalContent"></div>
+    </div>
+</div>
+
+<div id="toast" class="toast"></div>
+
+<script src="database.js"></script>
+<script src="storage.js"></script>
+<script src="app.js"></script>
+
+</body>
+</html>
